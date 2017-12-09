@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+       <div class="main">
+  <section class="page1">
+   <img src="images/demo1.jpg" alt="">
+  </section>
+  <section class="page2">
+    <img src="images/demo2.jpg" alt="">
+  </section>
+  
+  <section class="last-page">
+    <img src="images/demo4.jpg" alt="">
+  </section>
+</div>
+    
+    
+      
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.tiltedpage-scroll.min.js"></script>  
+       <script src="js/bootstrap.min.js"></script> 
+       <script>
+        $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+    </script> 
+        
+        
+</body>
+</html>
